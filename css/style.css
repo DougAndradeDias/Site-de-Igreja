@@ -1,0 +1,126 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  list-style: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  margin-right: 4rem;
+  margin-left: 4rem;
+  background-color: whitesmoke;
+}
+
+/* Cabeçalho e Navbar */
+header {
+  height: 4.375rem;
+  border-bottom: 1px solid black;
+}
+
+header .navbar {
+  height: 4.375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 4rem;
+  margin-left: 4rem;
+}
+
+header .navbar .logo {
+  display: inline-flex;
+}
+
+header .navbar .logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+}
+
+header .navbar .logo a {
+  margin: auto;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+header .navbar .menu ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+header .navbar .menu li {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+/* Slide de Imagens */
+#slider {
+  max-width: 2100px;
+  height: 30vw;
+  max-height: 500px;
+  position: relative;
+  margin-top: 1rem;
+}
+
+#slider img {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 800ms;
+}
+
+#slider img.selected {
+  opacity: 1;
+}
+
+/* Conteudo Principal da pagina */
+.page {
+  display: flex;
+}
+
+.page main {
+  border: 1px solid black;
+}
+
+main section .abstract {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+main section .reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+main section .abstract .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+main section .abstract .box p,
+main section .abstract .box h2 {
+  margin: 0;
+}
+
+main section .abstract .box .readmore {
+  display: flex;
+  justify-content: space-between;
+}
+
+main section .abstract img {
+  height: 14rem;
+}
+
+/* Conteudo do Aside */
+
+/* Rodapé */
